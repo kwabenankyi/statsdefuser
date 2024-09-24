@@ -10,8 +10,8 @@ def getTopLeftCoord(match):
     for row in columnVA:
         for i in range (4):
             if euclidDistance(row, i*2) < sum(topLeft):
-                topLeft[0] = row[i*2]
-                topLeft[1] = row[i*2 + 1]
+                topLeft[0] = int(row[i*2])
+                topLeft[1] = int(row[i*2 + 1])
                 topLeftRow = rowNum
         rowNum+=1
     return topLeft, topLeftRow
@@ -25,8 +25,8 @@ def getBottomRightCoord(match):
     for row in columnVA:
         for i in range (4):
             if euclidDistance(row, i*2) > sum(bottomRight):
-                bottomRight[0] = row[i*2]
-                bottomRight[1] = row[i*2 + 1]
+                bottomRight[0] = int(row[i*2])
+                bottomRight[1] = int(row[i*2 + 1])
                 bottomRightRow = rowNum
         rowNum+=1
     return bottomRight, bottomRightRow
