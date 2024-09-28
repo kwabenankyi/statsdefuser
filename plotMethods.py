@@ -10,12 +10,12 @@ class Pitch:
         self.homeCol = homeCol
         self.awayCol = awayCol
 
-    def drawNewPitch(self, coords):
+    def drawNewPitch(self, visibleCoords):
         # Create a rectangle patch
         rect = Rectangle((0,0), self.bottomRight[0], self.bottomRight[1], linewidth=2, edgecolor='g', facecolor='darkgreen')
         self.ax.add_patch(rect)
 
-        self.drawVisibleSegment(coords)
+        self.drawVisibleSegment(visibleCoords)
         self.drawPitchMarkings()
 
     def drawVisibleSegment(self, coords):
@@ -65,8 +65,8 @@ class Pitch:
         for p in players:
             self.drawPlayer(p)
 
-    def drawPitch(self, coords, players):
-        self.drawNewPitch(coords)
+    def drawPitch(self, visibleCoords, players):
+        self.drawNewPitch(visibleCoords)
         self.drawPlayers(players)
         self.ax.set_xlim([0, self.bottomRight[0]])
         self.ax.set_ylim([0, self.bottomRight[1]])
