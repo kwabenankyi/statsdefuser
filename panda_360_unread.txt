@@ -1,6 +1,3 @@
 data/three-sixty/3835338.json
 data/three-sixty/3835342.json
 data/three-sixty/3845506.json
-data/three-sixty/3835338.json
-data/three-sixty/3835342.json
-data/three-sixty/3845506.json
