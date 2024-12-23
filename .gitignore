@@ -3,3 +3,4 @@ __pycache__
 panda_360_unread.txt
 plan.txt
 \venv\
+.DS_Store
