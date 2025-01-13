@@ -1,7 +1,7 @@
 import json
 import os, os.path
 import pandas as pd
-from visibleAreaMethods import getBottomRightCoord, getTopLeftCoord
+from explore360.visibleAreaMethods import getBottomRightCoord, getTopLeftCoord
 
 # load matches from individual seasons
 allSeasons = []
